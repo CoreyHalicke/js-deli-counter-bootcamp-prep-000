@@ -48,7 +48,10 @@ function nowServing (katzDeliLine) {
 //If there is nobody in line, it should return "The line is currently empty."
 
 
-
+function currentLine(katzDeliLine) {
+  
+}
+  
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length > 0) {
     var s = "The line is currently:"
@@ -66,6 +69,32 @@ function currentLine(katzDeliLine) {
 }
 
 
+
+function currentLine(katzDeliLine) {
+  var newKatzDeliLine = []
+    if (katzDeliLine.length >=1) {
+      newKatzDeliLine.unshift('The line is currently: ')
+      for (let i = 0; i < katzDeliLine.length; i++) {
+        newKatzDeliLine.push(`${i + 1}. ${katzDeliLine[i]}, `)
+        }
+    } else {
+      newKatzDeliLine.unshift('The line is currently empty.')
+    }
+  return newKatzDeliLine
+}
+
+function currentLine(katzDeliLine) {
+  var newKatzDeliLine = []
+    if (katzDeliLine.length >=1) {
+      newKatzDeliLine.unshift(`The line is currently: 1. ${katzDeliLine[0]}`)
+      for (let i = 1; i < katzDeliLine.length; i++) {
+        newKatzDeliLine.push(` ${i + 1}. ${katzDeliLine[i]}`)
+        }
+    } else {
+      newKatzDeliLine.unshift('The line is currently empty.')
+    }
+  return newKatzDeliLine.join()
+}
 
 
 
