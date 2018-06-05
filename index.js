@@ -52,7 +52,21 @@ function currentLine(katzDeliLine) {
   
 }
   
-
+function currentLine(katzDeliLine) {
+  if (katzDeliLine.length > 0) {
+    var s = "The line is currently:"
+    var line = ''
+    
+    for ( var i = 0; i < katzDeliLine.length; ++i) {
+      line = line + ` ${i+1}. ` + `${katzDeliLine[i]}` + `${i < katzDeliLine.length - 1 ? ',' : ''}` 
+    }
+    
+    return s + line;
+    
+  } else {
+    return "The line is currently empty."
+  }
+}
 
 
 
