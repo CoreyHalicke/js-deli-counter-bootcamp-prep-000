@@ -57,7 +57,7 @@ function currentLine(katzDeliLine) {
     } else {
       newKatzDeliLine.unshift('The line is currently empty.')
     }
-    console.log
+    console.log(newKatzDeliLine.join())
   return newKatzDeliLine
 }
 
