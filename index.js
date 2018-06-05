@@ -47,6 +47,15 @@ function nowServing (katzDeliLine) {
 
 //If there is nobody in line, it should return "The line is currently empty."
 
+
+function currentLine(katzDeliLine) {
+  
+}
+  
+
+
+
+
 function currentLine(katzDeliLine) {
   var newKatzDeliLine = []
     if (katzDeliLine.length >=1) {
