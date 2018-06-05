@@ -49,36 +49,7 @@ function nowServing (katzDeliLine) {
 
 
   
-function currentLine(katzDeliLine) {
-  if (katzDeliLine.length > 0) {
-    var s = "The line is currently:"
-    var line = ''
-    
-    for ( var i = 0; i < katzDeliLine.length; ++i) {
-      line = line + ` ${i+1}. ` + `${katzDeliLine[i]}` + `${i < katzDeliLine.length - 1 ? ',' : ''}` 
-    }
-    
-    return s + line;
-    
-  } else {
-    return "The line is currently empty."
-  }
-}
 
-
-
-function currentLine(katzDeliLine) {
-  var newKatzDeliLine = []
-    if (katzDeliLine.length >=1) {
-      newKatzDeliLine.unshift('The line is currently: ')
-      for (let i = 0; i < katzDeliLine.length; i++) {
-        newKatzDeliLine.push(`${i + 1}. ${katzDeliLine[i]}, `)
-        }
-    } else {
-      newKatzDeliLine.unshift('The line is currently empty.')
-    }
-  return newKatzDeliLine
-}
 
 function currentLine(katzDeliLine) {
   var newKatzDeliLine = []
