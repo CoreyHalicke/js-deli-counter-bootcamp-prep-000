@@ -70,20 +70,6 @@ function currentLine(katzDeliLine) {
 
 
 
-function currentLine(katzDeliLine) {
-  var newKatzDeliLine = []
-    if (katzDeliLine.length >=1) {
-      newKatzDeliLine.unshift('The line is currently: ')
-      for (let i = 0; i < katzDeliLine.length; i++) {
-        newKatzDeliLine.push(`${i + 1}. ${katzDeliLine[i]}, `)
-        }
-    } else {
-      newKatzDeliLine.unshift('The line is currently empty.')
-    }
-  return newKatzDeliLine
-}
-
-
 
 
 
